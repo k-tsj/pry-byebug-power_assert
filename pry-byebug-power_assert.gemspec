@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
   spec.add_development_dependency "test-unit"
   spec.add_development_dependency "pry-byebug"
-   spec.add_development_dependency "power_assert", ">= 1.0.0"
+  spec.add_development_dependency "power_assert", ">= 1.0.0"
   spec.extra_rdoc_files = ['README.md']
   spec.rdoc_options     = ['--main', 'README.md']
   spec.licenses         = ['2-clause BSDL', "Ruby's"]
