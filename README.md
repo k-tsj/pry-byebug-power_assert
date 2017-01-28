@@ -5,6 +5,8 @@
 ## About
 pry-byebug-power_assert shows Power Assert style inspection message when you run 'next' command of pry-byebug.
 
+![Screenshot](https://raw.githubusercontent.com/wiki/k-tsj/pry-byebug-power_assert/images/screenshot.png)
+
 ## Installation
 
 Add this line to your application's Gemfile:
