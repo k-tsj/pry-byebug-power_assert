@@ -1,4 +1,7 @@
 # Pry::Byebug::PowerAssert
+
+[![Build Status](https://secure.travis-ci.org/k-tsj/power_assert.png?branch=master)](https://travis-ci.org/hsbt/minitest-power_assert)
+
 ## About
 pry-byebug-power_assert shows Power Assert style inspection message when you run 'next' command of pry-byebug.
 
