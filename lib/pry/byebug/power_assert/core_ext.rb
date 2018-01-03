@@ -10,7 +10,7 @@ ensure
 end
 
 module PowerAssert
-  INTERNAL_LIB_DIRS[Pry::Byebug::PowerAssert] = __dir__
+  INTERNAL_LIB_DIRS[Pry::Byebug::PowerAssert] = File.dirname(caller_locations(1, 1).first.path)
 end
 
 module Byebug
