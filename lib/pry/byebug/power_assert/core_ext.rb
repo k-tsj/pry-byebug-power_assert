@@ -10,7 +10,7 @@ ensure
 end
 
 module PowerAssert
-  IGNORED_LIB_DIRS[Pry::Byebug::PowerAssert] = __dir__
+  INTERNAL_LIB_DIRS[Pry::Byebug::PowerAssert] = __dir__
 end
 
 module Byebug
