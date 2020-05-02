@@ -9,8 +9,13 @@ class Pry::Byebug::PowerAssertTest < Test::Unit::TestCase
       Pry.config.should_load_rc      = false
       Pry.config.should_load_local_rc= false
       Pry.config.should_load_plugins = false
-      Pry.config.history.should_load = false
-      Pry.config.history.should_save = false
+      if Pry.config.respond_to?(:history_load)
+        Pry.config.history_load = false
+        Pry.config.history_save = false
+      else
+        Pry.config.history.should_load = false
+        Pry.config.history.should_save = false
+      end
       Pry.config.correct_indent      = false
       Pry.config.hooks               = Pry::Hooks.new
       Pry.config.collision_warning   = false
