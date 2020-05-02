@@ -29,7 +29,8 @@ module Byebug
       def resume_pry
         if @prev_power_assert_context
           begin
-            sep = Pry::Helpers::Text.green('-' * (Pry::Terminal.width! - 1))
+            w = (defined?(Pry::Terminal) ? Pry::Terminal.width! : Pry.new(output: StringIO.new).output.width) - 1
+            sep = Pry::Helpers::Text.green('-' * w)
             output.puts sep
             output.puts @prev_power_assert_context.message
             output.puts sep
