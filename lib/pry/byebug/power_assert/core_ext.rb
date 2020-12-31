@@ -5,6 +5,7 @@ require 'power_assert'
 begin
   verbose, $VERBOSE = $VERBOSE, nil
   require 'power_assert/colorize'
+rescue LoadError
 ensure
   $VERBOSE = verbose
 end
